@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), sendResumeActivity.class) ;
-                startActivity(intent) ;
+                //Intent intent = new Intent(getApplicationContext(), ~~Activity.class) ;
+                //startActivity(intent) ;
             }
         }) ;
     }
