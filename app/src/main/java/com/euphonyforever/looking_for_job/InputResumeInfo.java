@@ -36,7 +36,6 @@ public class InputResumeInfo extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name = editTextName.getText().toString();
                 name = editTextName.getText().toString();
                 birth = editTextBirth.getText().toString();
                 number = editTextNumber.getText().toString();
