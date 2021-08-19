@@ -10,12 +10,17 @@ import android.widget.EditText;
 
 public class InputResumeInfo extends AppCompatActivity {
 
-    EditText editTextName;
-    EditText editTextBirth;
-    EditText editTextNumber;
-    EditText editTextAddress;
-    EditText editTextCareer;
-    Button btnSend;
+    private EditText editTextName;
+    private EditText editTextBirth;
+    private EditText editTextNumber;
+    private EditText editTextAddress;
+    private EditText editTextCareer;
+    private Button btnSend;
+    private String name;
+    private String birth;
+    private String number;
+    private String address;
+    private String career;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +37,11 @@ public class InputResumeInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = editTextName.getText().toString();
-                String birth = editTextBirth.getText().toString();
-                String number = editTextNumber.getText().toString();
-                String address = editTextAddress.getText().toString();
-                String career = editTextCareer.getText().toString();
+                name = editTextName.getText().toString();
+                birth = editTextBirth.getText().toString();
+                number = editTextNumber.getText().toString();
+                address = editTextAddress.getText().toString();
+                career = editTextCareer.getText().toString();
 
             }
         });
