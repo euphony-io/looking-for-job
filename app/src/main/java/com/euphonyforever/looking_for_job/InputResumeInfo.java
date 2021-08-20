@@ -27,6 +27,8 @@ public class InputResumeInfo extends AppCompatActivity {
     private String career;
     private Map<String, String> data = new HashMap<>();
 
+    EuTxManager mTxManager = new EuTxManager();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,9 @@ public class InputResumeInfo extends AppCompatActivity {
 
                 Gson gson = new Gson();
                 String output = gson.toJson(data);
+
+                mTxManager.euInitTransmit(output);
+                mTxManager.process(1);
             }
         });
 

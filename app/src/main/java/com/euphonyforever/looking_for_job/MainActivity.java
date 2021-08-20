@@ -17,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
     Button buttonSend;
     Button buttonReceive;
 
-    EuTxManager mTxManager = new EuTxManager() ;
-    EuDataEncoder mSpeakText ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(getApplicationContext(), ~~Activity.class) ;
-                //startActivity(intent) ;
+                Intent intent = new Intent(getApplicationContext(), ~~Activity.class) ;
+                startActivity(intent) ;
             }
         }) ;
     }
