@@ -2,11 +2,15 @@ package com.euphonyforever.looking_for_job;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.gson.Gson;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class InputResumeInfo extends AppCompatActivity {
 
@@ -21,6 +25,7 @@ public class InputResumeInfo extends AppCompatActivity {
     private String number;
     private String address;
     private String career;
+    private Map<String, String> data = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +41,14 @@ public class InputResumeInfo extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                name = editTextName.getText().toString();
-                birth = editTextBirth.getText().toString();
-                number = editTextNumber.getText().toString();
-                address = editTextAddress.getText().toString();
-                career = editTextCareer.getText().toString();
+                data.put("name", editTextName.getText().toString());
+                data.put("birth", editTextBirth.getText().toString());
+                data.put("number", editTextNumber.getText().toString());
+                data.put("address", editTextAddress.getText().toString());
+                data.put("career", editTextCareer.getText().toString());
 
+                Gson gson = new Gson();
+                String output = gson.toJson(data);
             }
         });
 
