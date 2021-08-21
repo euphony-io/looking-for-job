@@ -12,6 +12,9 @@ import com.google.gson.Gson;
 import java.util.HashMap;
 import java.util.Map;
 
+import euphony.lib.trasmitter.EuDataEncoder;
+import euphony.lib.transmitter.EuTxManager;
+
 public class InputResumeInfo extends AppCompatActivity {
 
     private EditText editTextName;
@@ -26,6 +29,8 @@ public class InputResumeInfo extends AppCompatActivity {
     private String address;
     private String career;
     private Map<String, String> data = new HashMap<>();
+
+    EuTxManager mTxManager = new EuTxManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +54,9 @@ public class InputResumeInfo extends AppCompatActivity {
 
                 Gson gson = new Gson();
                 String output = gson.toJson(data);
+
+                mTxManager.euInitTransmit(output);
+                mTxManager.process(1);
             }
         });
 
