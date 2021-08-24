@@ -2,6 +2,7 @@ package com.euphonyforever.looking_for_job;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -19,11 +20,13 @@ public class OutputResumeInfo extends AppCompatActivity
         setContentView(R.layout.activity_output_resume_info);
 
         Intent intent = getIntent();
-        name = intent.getExtras().getString("name");
-        birth = intent.getExtras().getString("birth");
-        number = intent.getExtras().getString("number");
-        address = intent.getExtras().getString("address");
-        career = intent.getExtras().getString("career");
+        String info = intent.getExtras().getString("info");
+        Log.d("Test", info);
+//        name = intent.getExtras().getString("name");
+//        birth = intent.getExtras().getString("birth");
+//        number = intent.getExtras().getString("number");
+//        address = intent.getExtras().getString("address");
+//        career = intent.getExtras().getString("career");
 
         textViewName = (TextView) findViewById(R.id.nameData);
         textViewBirth = (TextView) findViewById(R.id.birthData);
