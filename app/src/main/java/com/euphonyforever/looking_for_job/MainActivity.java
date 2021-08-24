@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*btnSend = findViewById(R.id.btnSend);
+        btnSend = findViewById(R.id.btnSend);
 
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), InputResumeInfo.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }
