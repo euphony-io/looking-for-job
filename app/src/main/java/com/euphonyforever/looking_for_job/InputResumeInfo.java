@@ -12,7 +12,6 @@ import com.google.gson.Gson;
 import java.util.HashMap;
 import java.util.Map;
 
-import euphony.lib.transmitter.EuDataEncoder;
 import euphony.lib.transmitter.EuTxManager;
 
 public class InputResumeInfo extends AppCompatActivity {
