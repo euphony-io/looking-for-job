@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mRxManager.setAcousticSensor(letters -> {
             if(letters != null && letters.isEmpty()) {
                 mRxManager.finish();
-
+            }else{
                 Intent intent = new Intent(mContext, OutputResumeInfo.class);
                 intent.putExtra("info", letters);
                 startActivity(intent);
