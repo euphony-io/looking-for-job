@@ -7,11 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.google.gson.Gson;
-
-import java.util.HashMap;
-import java.util.Map;
-
 import euphony.lib.transmitter.EuTxManager;
 
 public class InputResumeInfo extends AppCompatActivity {
@@ -22,12 +17,7 @@ public class InputResumeInfo extends AppCompatActivity {
     private EditText editTextAddress;
     private EditText editTextCareer;
     private Button btnSend;
-    private String name;
-    private String birth;
-    private String number;
-    private String address;
-    private String career;
-    private Map<String, String> data = new HashMap<>();
+    private String output = "";
 
     EuTxManager mTxManager = new EuTxManager();
 
@@ -45,17 +35,15 @@ public class InputResumeInfo extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                data.put("name", editTextName.getText().toString());
-                data.put("birth", editTextBirth.getText().toString());
-                data.put("number", editTextNumber.getText().toString());
-                data.put("address", editTextAddress.getText().toString());
-                data.put("career", editTextCareer.getText().toString());
 
-                Gson gson = new Gson();
-                String output = gson.toJson(data);
+                output += (editTextName.getText().toString() + "%");
+                output += (editTextBirth.getText().toString() + "%");
+                output += (editTextNumber.getText().toString() + "%");
+                output += (editTextAddress.getText().toString() + "%");
+                output += editTextCareer.getText().toString();
 
                 mTxManager.euInitTransmit(output);
-                mTxManager.process(1);
+                mTxManager.process(-1);
             }
         });
 
