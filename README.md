@@ -12,12 +12,12 @@ Send and receive the following information through this app.
 ## How to use
 
 #### Send resume
-1. Click the 이력서 보내기(Send Resume) button.
+1. Click the "이력서 보내기(Send Resume)" button.
 2. Fill in your information.
-3. press the 전송(send) button.
+3. Click the "전송(send)" button.
 
 #### Receive Resume
-1. Click the 이력서 받기(Get Resume) button.
+1. Click the "이력서 받기(Get Resume)" button.
 2. Receive sound waves with the euphony listener running.
 3. When it receives sound waves, it converts them into data and displays resume information.
 
