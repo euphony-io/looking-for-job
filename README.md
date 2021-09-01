@@ -1,8 +1,8 @@
 # Looking-for-job
 
-This is a sample project using the [euphony library](https://github.com/euphony-io/euphony).<br>
-You can easily send and receive resume information.<br>
-Send and receive the following information through this app.
+This is a sample project made by euphonyforever using the [euphony library](https://github.com/euphony-io/euphony). The purpose of this app is provide an easy way to send and receive resumes and introduce various ways to use euphony.<br>
+
+You can send or receive the following informations.
 - name
 - birth
 - phone-number
@@ -11,15 +11,25 @@ Send and receive the following information through this app.
 
 ## How to use
 
-#### Send resume
+### On Android Studio
+
+- #### Start
+1. Clone the project with Git or Android Studio. 
+2. On Android Studio build and run the project.
+
+- #### Send resume
 1. Click the "이력서 보내기(Send Resume)" button.
 2. Fill in your information.
 3. Click the "전송(send)" button.
 
-#### Receive Resume
+- #### Receive Resume
 1. Click the "이력서 받기(Get Resume)" button.
 2. Receive sound waves with the euphony listener running.
 3. When it receives sound waves, it converts them into data and displays resume information.
+
+## Notation
+- The app requires audio permission.
+- The app targets API level 30, and support at least API level 21.
 
 ## Contributing
 Changes and improvements are more than welcome! Feel Free to fork and open a pull request. Please make your changes in a specific branch and request to pull into `master`.
