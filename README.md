@@ -14,14 +14,14 @@ You can send or receive the following informations.
 
 #### On Android Studio
 
-- #### Start
+- ### Start
 1. Clone the project with Git or Android Studio. 
 2. On Android Studio build and run the project.
 <img src="https://user-images.githubusercontent.com/75830400/131778692-aab1ffe0-0202-46be-8d32-7dc4e40a4444.png" /> 
 <img src="https://user-images.githubusercontent.com/75830400/131778695-19db51fe-889d-4970-8032-eed85039ac66.png" />
 <br>
 
-- #### Send resume
+- ### Send resume
 <img src="https://user-images.githubusercontent.com/75830400/131777821-60c1009c-361b-4bbe-ac19-50df1790864c.png" width="30%" /> <img src="https://user-images.githubusercontent.com/75830400/131777825-57ab004f-de13-4b0f-936f-65cf94d41c8f.png" width="30%" />
 <br>
 1. Click the "이력서 보내기(Send Resume)" button.
@@ -29,7 +29,7 @@ You can send or receive the following informations.
 3. Click the "전송(send)" button.
 <br>
 
-- #### Receive Resume
+- ### Receive Resume
 1. Click the "이력서 받기(Get Resume)" button.
 2. Receive sound waves with the euphony listener running.
 3. When it receives sound waves, it converts them into data and displays resume information.
