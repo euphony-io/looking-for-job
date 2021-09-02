@@ -22,7 +22,7 @@ You can send or receive the following informations.
 <br>
 
 - #### Send resume
-<img src="https://user-images.githubusercontent.com/75830400/131777821-60c1009c-361b-4bbe-ac19-50df1790864c.png" width="40%" /> <img src="https://user-images.githubusercontent.com/75830400/131777825-57ab004f-de13-4b0f-936f-65cf94d41c8f.png" width="40%" />
+<img src="https://user-images.githubusercontent.com/75830400/131777821-60c1009c-361b-4bbe-ac19-50df1790864c.png" width="30%" /> <img src="https://user-images.githubusercontent.com/75830400/131777825-57ab004f-de13-4b0f-936f-65cf94d41c8f.png" width="30%" />
 <br>
 1. Click the "이력서 보내기(Send Resume)" button.
 2. Fill in your information.
@@ -37,7 +37,7 @@ You can send or receive the following informations.
 <br><br>
 
 ## Notation
-<img src="https://user-images.githubusercontent.com/75830400/131777830-46e0f862-be84-4c91-ab7a-4359e62bcc99.png" width="40%" />
+<img src="https://user-images.githubusercontent.com/75830400/131777830-46e0f862-be84-4c91-ab7a-4359e62bcc99.png" width="30%" />
 - The app requires audio permission.
 - The app targets API level 30, and support at least API level 21.
 
