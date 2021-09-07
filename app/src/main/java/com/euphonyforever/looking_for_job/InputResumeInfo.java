@@ -18,6 +18,7 @@ public class InputResumeInfo extends AppCompatActivity {
     private EditText editTextCareer;
     private Button btnSend;
     private String output = "";
+    private boolean speakOn = false;
 
     EuTxManager mTxManager = new EuTxManager();
 
@@ -36,14 +37,22 @@ public class InputResumeInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                output += (editTextName.getText().toString() + "%");
-                output += (editTextBirth.getText().toString() + "%");
-                output += (editTextNumber.getText().toString() + "%");
-                output += (editTextAddress.getText().toString() + "%");
-                output += editTextCareer.getText().toString();
+                if(speakOn){
+                    mTxManager.stop();
+                    btnSend.setText("전송");
+                    speakOn = false;
+                }else{
+                    output += (editTextName.getText().toString() + "%");
+                    output += (editTextBirth.getText().toString() + "%");
+                    output += (editTextNumber.getText().toString() + "%");
+                    output += (editTextAddress.getText().toString() + "%");
+                    output += editTextCareer.getText().toString();
 
-                mTxManager.euInitTransmit(output);
-                mTxManager.process(-1);
+                    mTxManager.euInitTransmit(output);
+                    mTxManager.process(-1);
+                    btnSend.setText("중지");
+                    speakOn = true;
+                }
             }
         });
 
